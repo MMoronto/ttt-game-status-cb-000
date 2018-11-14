@@ -67,7 +67,9 @@ def winner(board)
   
   if !win_combo
     return nil
-  elsif board[win_combo[0]] == "X" || board[win_combo[0]] == "O"
-  return "X"
-end
+  elsif board[win_combo[0]] == "X" 
+    return "X"
+  elsif board[win_combo[0]] == "O"
+    return "O"
+  end
 end   
