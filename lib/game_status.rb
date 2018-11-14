@@ -22,7 +22,7 @@ WIN_COMBINATIONS = [
 
 def won?(board)
  WIN_COMBINATIONS.each do |win_combo|
-    #win_combo.each{|win_index|}
+
   win_index_1 =  board[win_combo[0]]
   win_index_2 =  board[win_combo[1]]
   win_index_3 =  board[win_combo[2]]
@@ -44,5 +44,11 @@ def full?(board)
 end   
 
 def draw?(board)
-    
+    board.each do |index|
+      if index == !won?(board) && index == full?(board)
+        return true
+      elsif index == !won?(board) && index == !full?(board)
+        return false
+      end 
+    end     
 end   
