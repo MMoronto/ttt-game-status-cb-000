@@ -27,10 +27,7 @@ def won?(board)
   win_index_2 =  board[win_combo[1]]
   win_index_3 =  board[win_combo[2]]
   
-  if win_index_1 == "X" && board[win_index[1]] == "X" && board[win_index[2]] == "X" ||
-  #return win_combo
-  #elsif
-    board[win_index[0]] == "O" && board[win_index[1]] == "O" && board[win_index[2]] == "O"
+  if win_index_1 == "X" && win_index_2 == "X" && win_index_3 == "X" || win_index_1 == "O" && win_index_2 == "O" && win_index_3 == "O" 
   return win_combo
   end
  end
