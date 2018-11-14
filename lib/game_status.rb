@@ -51,5 +51,5 @@ def draw?(board)
       #elsif won?(board)
         #return false
       end 
-    end     
+    #end     
 end   
