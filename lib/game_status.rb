@@ -42,3 +42,7 @@ def full?(board)
   end
       return true 
 end   
+
+def draw?(board)
+    
+end   
