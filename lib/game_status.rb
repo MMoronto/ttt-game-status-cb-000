@@ -23,11 +23,11 @@ WIN_COMBINATIONS = [
 def won?(board)
  WIN_COMBINATIONS.each do |win_combo|
     #win_combo.each{|win_index|}
-  win_index_1 = win_combo[0]
-  win_index_2 = win_combo[1]
-  win_index_3 = win_combo[2]
+  win_index_1 =  board[win_combo[0]]
+  win_index_2 =  board[win_combo[1]]
+  win_index_3 =  board[win_combo[2]]
   
-  if board[win_index[0]] == "X" && board[win_index[1]] == "X" && board[win_index[2]] == "X" ||
+  if win_index_1 == "X" && board[win_index[1]] == "X" && board[win_index[2]] == "X" ||
   #return win_combo
   #elsif
     board[win_index[0]] == "O" && board[win_index[1]] == "O" && board[win_index[2]] == "O"
