@@ -47,7 +47,7 @@ def draw?(board)
     board.each do |index|
       if index == !won?(board) && index == full?(board)
         return true
-      elsif index == !won?(board) && index == !full?(board)
+      elsif index == !won?(board) || index == won?(board) && index == !full?(board)
         return false
       end 
     end     
